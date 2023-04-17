@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     font-size: 20px;
     padding: 0 20px;
@@ -10,13 +15,21 @@ body{
 .main-container{
     display:flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     border: 2px solid red;
     height: 300px;
-    
+    margin-top: 30px;
 }
-p{
-    text-align: left;
-    padding: 0 20px;
+.text-container{
+    display: flex;
+    align-items: center;
+}
+.text-container{
+    flex-direction: column;
+}
+.text-container div{
+    color: #fff;
 }
 .main-container > button{
     background: green;
@@ -24,4 +37,5 @@ p{
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
+    margin-top: 30px;
 }
