@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+:root{
+    --light-cyan :hsl(193, 38%, 86%);
+    --neon-green :hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218,23%,16%);
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
 }
 body{
     font-size: 20px;
@@ -10,7 +20,7 @@ body{
     text-align: center;
     margin: 0 auto;
     max-width: 800px;
-    background: #555;
+    background: var(--dark-grayish-blue);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -39,13 +49,13 @@ p{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background: #777;
+    background: var(--grayish-blue);
     height: 100%;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .text-container div{
-    color: #fff;
+    color: var(--light-cyan);
     font-size: 25px;
     font-weight: 600;
     padding: 20px;
@@ -56,8 +66,18 @@ p{
 .text-container div::after{
     content: '"';
 }
+.text-container img{
+    width: 320px;
+    height: 15px;
+    margin-bottom: 20px;
+}
 .main-container > button{
-    background: rgb(135, 226, 135);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background: var(--neon-green);
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
@@ -68,6 +88,9 @@ p{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .main-container > button:hover{
-    border-color: rgb(135, 226, 135);
-    box-shadow: 0 0 40px rgb(135, 226, 135);
+    border-color: var(--neon-green);
+    box-shadow: 0 0 40px var(--neon-green);
+}
+.main-container button img{
+    height: 22px;
 }
