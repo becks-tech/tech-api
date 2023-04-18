@@ -20,11 +20,12 @@ body{
     text-align: center;
     margin: 0 auto;
     max-width: 800px;
-    background: var(--dark-grayish-blue);
+    background: var(--dark-blue);
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 80vh;
     
 }
 h1{
@@ -37,9 +38,8 @@ p{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 400px;
-    height: 220px;
-    margin-top: 30px;
+    width: 500px;
+    height: 300px;
     position: relative;
     border-radius: 25px;
     
@@ -49,16 +49,19 @@ p{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background: var(--grayish-blue);
+    background: var(--dark-grayish-blue);
     height: 100%;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+#quoteNum{
+    color: var(--neon-green);
+}
 .text-container div{
     color: var(--light-cyan);
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 600;
-    padding: 20px;
+    padding: 30px;
 }
 .text-container div::before{
     content: '"';
@@ -67,7 +70,7 @@ p{
     content: '"';
 }
 .text-container img{
-    width: 320px;
+    padding: 0px 30px;
     height: 15px;
     margin-bottom: 20px;
 }
@@ -75,8 +78,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     background: var(--neon-green);
     padding: 10px;
     cursor: pointer;
@@ -89,7 +92,7 @@ p{
 }
 .main-container > button:hover{
     border-color: var(--neon-green);
-    box-shadow: 0 0 40px var(--neon-green);
+    box-shadow: var(--neon-green) 0px 0px 40px;
 }
 .main-container button img{
     height: 22px;
