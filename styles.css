@@ -42,7 +42,6 @@ p{
     height: 300px;
     position: relative;
     border-radius: 25px;
-    
 }
 .text-container{
     display: flex;
@@ -53,16 +52,18 @@ p{
     height: 100%;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
 }
 #quoteNum{
     color: var(--neon-green);
-
+    margin-bottom: 10px;
 }
 .text-container div{
     color: var(--light-cyan);
     font-size: 28px;
     font-weight: 600;
-    padding: 30px;
+    padding: 20px;
+    max-height: 114px;
 }
 .text-container div::before{
     content: '"';
@@ -73,7 +74,7 @@ p{
 .text-container img{
     padding: 0px 30px;
     height: 15px;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 .main-container > button{
     display: flex;
