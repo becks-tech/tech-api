@@ -12,6 +12,12 @@ document.querySelector('button').addEventListener('click', () =>{
         console.log(data)
         document.querySelector('.par').innerHTML = data;
     })
+    createRandomNumber();
+});
+function getRandomNumber(){
+    return Math.floor(Math.random() * num.length);
+}
+function createRandomNumber(){
     console.log('Getting random number now...')
     let randNum = '';
     for (let i=0;i<3; i++){
@@ -20,10 +26,5 @@ document.querySelector('button').addEventListener('click', () =>{
     }
     console.log(randNum)
     quoteNum.textContent = "QUOTE #"+randNum;
-    
-});
-function getRandomNumber(){
-    return Math.floor(Math.random() * num.length);
 }
-
 
