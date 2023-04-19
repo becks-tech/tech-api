@@ -19,7 +19,7 @@ document.querySelector('button').addEventListener('click', () =>{
         
     }
     console.log(randNum)
-    quoteNum.textContent = "ADVICE #"+randNum;
+    quoteNum.textContent = "QUOTE #"+randNum;
     
 });
 function getRandomNumber(){
