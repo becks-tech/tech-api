@@ -56,6 +56,7 @@ p{
 }
 #quoteNum{
     color: var(--neon-green);
+
 }
 .text-container div{
     color: var(--light-cyan);
